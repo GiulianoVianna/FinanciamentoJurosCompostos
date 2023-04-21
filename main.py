@@ -26,12 +26,15 @@ def calcular():
         total_financiamento = principal * (1 + taxa_juros / 100) ** parcelas
         valor_parcelas = total_financiamento / parcelas
         valor_juros = total_financiamento - principal
+        percentual = (valor_juros / total_financiamento) * 100
+        
 
         # Exibindo os resultados formatados como moeda brasileira
         locale.setlocale(locale.LC_ALL, 'pt_BR.UTF-8')
         tela.line_valor_parcelas.setText(locale.currency(valor_parcelas, grouping=True))
         tela.line_valor_financiamento.setText(locale.currency(total_financiamento, grouping=True))
         tela.line_valor_juros.setText(locale.currency(valor_juros, grouping=True))
+        tela.line_percentual.setText(f'{percentual:.2f}' "%")
 
     # Tratando possíveis erros de conversão de string para número
     except ValueError:
@@ -47,6 +50,7 @@ def limpar():
         tela.line_valor_parcelas,
         tela.line_valor_financiamento,
         tela.line_valor_juros,
+        tela.line_percentual,
     ]
     for widget in line_texto:
         widget.clear()

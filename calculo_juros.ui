@@ -281,6 +281,40 @@ border: none;</string>
      <string>Total de Juros</string>
     </property>
    </widget>
+   <widget class="QLineEdit" name="line_percentual">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>80</y>
+      <width>91</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(237, 51, 59);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_7">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>61</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(94, 92, 100);
+border: none;</string>
+    </property>
+    <property name="text">
+     <string>Total %</string>
+    </property>
+   </widget>
   </widget>
   <zorder>frame</zorder>
   <zorder>line_valor</zorder>

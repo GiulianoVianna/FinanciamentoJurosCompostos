@@ -1,0 +1,308 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Form</class>
+ <widget class="QWidget" name="Form">
+  <property name="windowModality">
+   <enum>Qt::NonModal</enum>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>442</width>
+    <height>179</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Cálculo de Financiamento - Juros Compostos</string>
+  </property>
+  <property name="windowIcon">
+   <iconset theme="applications-other"/>
+  </property>
+  <property name="windowOpacity">
+   <double>0.980000000000000</double>
+  </property>
+  <widget class="QLineEdit" name="line_valor">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>40</y>
+     <width>131</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(61, 56, 70);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_juros">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>40</y>
+     <width>51</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(61, 56, 70);</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_valor_financiamento">
+   <property name="enabled">
+    <bool>false</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>139</y>
+     <width>131</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(28, 113, 216);
+background-color: rgb(255, 255, 255);
+</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>21</y>
+     <width>140</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(94, 92, 100);</string>
+   </property>
+   <property name="text">
+    <string>Valor - Financiamento</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>170</x>
+     <y>21</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(94, 92, 100);</string>
+   </property>
+   <property name="text">
+    <string>Juros %</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_3">
+   <property name="geometry">
+    <rect>
+     <x>30</x>
+     <y>120</y>
+     <width>63</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(94, 92, 100);</string>
+   </property>
+   <property name="text">
+    <string>Valor Final</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="label_4">
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>71</y>
+     <width>141</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(94, 92, 100);</string>
+   </property>
+   <property name="text">
+    <string>Valor da Parcela</string>
+   </property>
+  </widget>
+  <widget class="QLineEdit" name="line_valor_parcelas">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>29</x>
+     <y>90</y>
+     <width>131</width>
+     <height>18</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">color: rgb(28, 113, 216);
+</string>
+   </property>
+  </widget>
+  <widget class="QPushButton" name="btn_calcular">
+   <property name="geometry">
+    <rect>
+     <x>329</x>
+     <y>68</y>
+     <width>80</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+    background-color: rgb(87, 227, 137);
+}
+QPushButton:hover {    
+	background-color: rgb(38, 162, 105);
+}
+</string>
+   </property>
+   <property name="text">
+    <string>&amp;Calcular</string>
+   </property>
+  </widget>
+  <widget class="QFrame" name="frame">
+   <property name="geometry">
+    <rect>
+     <x>10</x>
+     <y>10</y>
+     <width>421</width>
+     <height>161</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QFrame {
+    border-width: 0.8px;
+    border-style: solid;   	
+	
+	border-color: rgb(154, 153, 150);
+}
+</string>
+   </property>
+   <property name="frameShape">
+    <enum>QFrame::StyledPanel</enum>
+   </property>
+   <property name="frameShadow">
+    <enum>QFrame::Raised</enum>
+   </property>
+   <widget class="QPushButton" name="btn_limpar">
+    <property name="geometry">
+     <rect>
+      <x>320</x>
+      <y>106</y>
+      <width>80</width>
+      <height>41</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">QPushButton{    
+	background-color: rgb(246, 97, 81);
+}
+QPushButton:hover { 
+	background-color: rgb(165, 29, 45);
+}
+</string>
+    </property>
+    <property name="text">
+     <string>&amp;Limpar</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_parcelas">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>30</y>
+      <width>71</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(61, 56, 70);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_5">
+    <property name="geometry">
+     <rect>
+      <x>220</x>
+      <y>12</y>
+      <width>60</width>
+      <height>15</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(94, 92, 100);
+border: none;
+
+</string>
+    </property>
+    <property name="text">
+     <string>Qt. Parc.</string>
+    </property>
+   </widget>
+   <widget class="QLineEdit" name="line_valor_juros">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>129</y>
+      <width>131</width>
+      <height>18</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(237, 51, 59);
+background-color: rgb(255, 255, 255);</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="label_6">
+    <property name="geometry">
+     <rect>
+      <x>160</x>
+      <y>110</y>
+      <width>131</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">color: rgb(94, 92, 100);
+border: none;</string>
+    </property>
+    <property name="text">
+     <string>Total de Juros</string>
+    </property>
+   </widget>
+  </widget>
+  <zorder>frame</zorder>
+  <zorder>line_valor</zorder>
+  <zorder>line_juros</zorder>
+  <zorder>line_valor_financiamento</zorder>
+  <zorder>label</zorder>
+  <zorder>label_2</zorder>
+  <zorder>label_3</zorder>
+  <zorder>label_4</zorder>
+  <zorder>line_valor_parcelas</zorder>
+  <zorder>btn_calcular</zorder>
+ </widget>
+ <tabstops>
+  <tabstop>line_valor</tabstop>
+  <tabstop>line_juros</tabstop>
+  <tabstop>line_parcelas</tabstop>
+  <tabstop>btn_calcular</tabstop>
+  <tabstop>btn_limpar</tabstop>
+  <tabstop>line_valor_parcelas</tabstop>
+  <tabstop>line_valor_financiamento</tabstop>
+  <tabstop>line_valor_juros</tabstop>
+ </tabstops>
+ <resources/>
+ <connections/>
+</ui>

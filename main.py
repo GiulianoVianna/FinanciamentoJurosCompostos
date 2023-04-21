@@ -34,7 +34,7 @@ def calcular():
         tela.line_valor_parcelas.setText(locale.currency(valor_parcelas, grouping=True))
         tela.line_valor_financiamento.setText(locale.currency(total_financiamento, grouping=True))
         tela.line_valor_juros.setText(locale.currency(valor_juros, grouping=True))
-        tela.line_percentual.setText(f'{percentual:.2f}' "%")
+        tela.line_percentual.setText(f'{percentual:.2f}' "%".replace(".", ","))
 
     # Tratando possíveis erros de conversão de string para número
     except ValueError:

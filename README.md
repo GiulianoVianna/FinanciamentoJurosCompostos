@@ -18,5 +18,5 @@ A aplicação permite realizar cálculos de juros compostos. O usuário pode inf
 
 
 ## Imagem
-![image](https://user-images.githubusercontent.com/101942554/233535044-86c3792a-cb46-46a5-b89d-fdc565bf00a6.png)
+![image](https://user-images.githubusercontent.com/101942554/233536859-35b3daee-c39a-4b4f-a76c-33006b673b91.png)
 
